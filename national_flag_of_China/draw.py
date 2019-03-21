@@ -1,6 +1,8 @@
 from turtle import *
 import math
-setup(width=900, height=600, startx=None, starty=None)
+
+flagwidth = 1200
+setup(width=flagwidth, height=2/3*flagwidth, startx=None, starty=None)
 
 def draw_star(point,radius,angle=0):
     x,y = point
@@ -21,7 +23,7 @@ def draw_star(point,radius,angle=0):
         forward(a)
         right(144)
     end_fill()
-cell = 900 / 2 / 15
+cell = flagwidth / 2 / 15
 rbig = cell * 3
 rsmall = cell * 1
 
