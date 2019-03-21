@@ -3,6 +3,7 @@ import math
 
 flagwidth = 1200
 setup(width=flagwidth, height=2/3*flagwidth, startx=None, starty=None)
+bgcolor("red")
 
 def draw_star(point,radius,angle=0):
     x,y = point
@@ -13,7 +14,6 @@ def draw_star(point,radius,angle=0):
     forward(radius)
     right(180-18)
     pendown()
-    bgcolor("red")
     color('yellow', 'yellow')
     begin_fill()
     for i in range(0,5):
@@ -23,6 +23,7 @@ def draw_star(point,radius,angle=0):
         forward(a)
         right(144)
     end_fill()
+
 cell = flagwidth / 2 / 15
 rbig = cell * 3
 rsmall = cell * 1
